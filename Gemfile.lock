@@ -16,12 +16,28 @@ GIT
       decidim-core
 
 GIT
+  remote: https://github.com/OpenSourcePolitics/decidim-module_cookies
+  revision: 685ee81b4b9fd3dca3715a34e320b616eefeac24
+  branch: release/0.23-stable
+  specs:
+    decidim-cookies (0.23.1)
+      decidim-core (= 0.23.1)
+
+GIT
   remote: https://github.com/Platoniq/decidim-module-navigation_maps
   revision: 4800178303d77c29259b9d81829d91672ddfd1be
   specs:
     decidim-navigation_maps (1.0)
       decidim-admin (>= 0.18.0)
       decidim-core (>= 0.18.0)
+
+GIT
+  remote: https://github.com/Platoniq/decidim-verifications-direct_verifications
+  revision: 310f0e6a1556c41f7b4bb3bbde144e0d1aaf4fcd
+  specs:
+    decidim-direct_verifications (0.22.1)
+      decidim-admin (>= 0.22.0)
+      decidim-core (>= 0.22.0)
 
 GIT
   remote: https://github.com/decidim/decidim.git
@@ -86,6 +102,11 @@ GIT
       decidim-core (= 0.23.1)
       jquery-rails (~> 4.3)
       redcarpet (~> 3.4)
+    decidim-conferences (0.23.1)
+      decidim-core (= 0.23.1)
+      decidim-meetings (= 0.23.1)
+      wicked_pdf (~> 1.4)
+      wkhtmltopdf-binary (~> 0.12)
     decidim-core (0.23.1)
       active_link_to (~> 1.0)
       anchored (>= 1.1.0)
@@ -853,7 +874,10 @@ DEPENDENCIES
   byebug (~> 11.0)
   dalli
   decidim!
+  decidim-conferences!
+  decidim-cookies!
   decidim-dev!
+  decidim-direct_verifications!
   decidim-navbar_links!
   decidim-navigation_maps!
   decidim-term_customizer!
