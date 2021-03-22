@@ -16,14 +16,6 @@ GIT
       decidim-core
 
 GIT
-  remote: https://github.com/OpenSourcePolitics/decidim-module_cookies
-  revision: 685ee81b4b9fd3dca3715a34e320b616eefeac24
-  branch: release/0.23-stable
-  specs:
-    decidim-cookies (0.23.1)
-      decidim-core (= 0.23.1)
-
-GIT
   remote: https://github.com/Platoniq/decidim-module-navigation_maps
   revision: 4800178303d77c29259b9d81829d91672ddfd1be
   specs:
@@ -893,7 +885,6 @@ DEPENDENCIES
   dalli
   decidim!
   decidim-conferences!
-  decidim-cookies!
   decidim-dev!
   decidim-direct_verifications!
   decidim-initiatives (= 0.23.1)
