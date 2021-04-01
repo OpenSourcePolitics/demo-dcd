@@ -351,7 +351,7 @@ form button {
 
 // header
 .logo-wrapper img {
-    max-height: 25px;
+    max-height: 70px;
 }
 
 .title-bar {
@@ -416,6 +416,13 @@ form button {
 .topbar__user__login a {
   color: var(--primary);
   font-weight: 600;
+}
+
+.topbar__notifications .icon, .topbar__conversations .icon {
+  position: relative;
+  top: 10px;
+  fill: var(--primary);
+  opacity: .3;
 }
 
 // banner
@@ -580,6 +587,7 @@ a img + .external-link-indicator {
 }
 
 .accountability .intro .progress-level .progress-figure {
+  font-family: "Sahar", Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: var(--primary);
   text-shadow: 2px 2px 0px rgba(6, 188, 193, 1);
@@ -589,6 +597,18 @@ a img + .external-link-indicator {
   font-weight: bold;
   color: var(--primary);
   text-shadow: 1px 1px 0px rgba(6, 188, 193, 1);
+}
+
+.process-stats__number {
+  font-family: "Sahar", Arial, Helvetica, sans-serif;
+  color: var(--primary);
+  text-shadow: 1px 1px 0px rgba(6, 188, 193, 1);
+}
+
+.progress__bar.progress__bar--vertical .progress__bar__number {
+  font-family: "Sahar", Arial, Helvetica, sans-serif;
+  font-weight: 700 !important;
+  text-shadow: 1px 1px 0px rgb(6, 188, 193);
 }
 
 .accountability .categories .categories--group .card__link .category--line strong {
@@ -607,4 +627,38 @@ a img + .external-link-indicator {
 
 .floating-helper__content-close {
   border-radius: 0px 0px 10px 0;
+}
+
+@media print, screen and (min-width: 40em) {
+  .budget-list__data {
+    min-width: 20rem;
+  }
+}
+
+.button.tiny.process-nav__more i {
+  background-color: white;
+}
+
+.process-nav__hidden-content__more i {
+  background-color: var(--primary);
+}
+
+.process-stats__data::after {
+  border-left: 2px solid var(--secondary); 
+}
+
+.button--vote-button {
+  margin-bottom: 10px;
+}
+
+.compact, .compact:hover {
+  box-shadow: none;
+}
+
+.extra .button:last-of-type {
+  margin-top: 10px;
+}
+
+.comment--nested {
+  border-top: 1px var(--primary) solid;
 }
